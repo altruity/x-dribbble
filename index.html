@@ -1,0 +1,143 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>X-dribbble by altruity</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>X-dribbble</h1>
+        <p>A Polymer element for querying the Dribbble API</p>
+
+        <p class="view"><a href="https://github.com/altruity/x-dribbble">View the Project on GitHub <small>altruity/x-dribbble</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/altruity/x-dribbble/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/altruity/x-dribbble/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/altruity/x-dribbble">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>
+<a name="x-dribbble" class="anchor" href="#x-dribbble"><span class="octicon octicon-link"></span></a>&lt;x-dribbble&gt;</h1>
+
+<p>A <a href="http://polymer-project.org">Polymer</a> element for querying results from the <a href="https://dribbble.com/api">Dribbble API</a></p>
+
+<blockquote>
+<p>Inspired by <a href="https://github.com/addyosmani/x-instagram/" target="_blank">Addy Osmani's x-instagram</a> and <a href="https://github.com/tamaspiros/x-flickr/" target="_blank">Tamas Piros's x-flickr</a>. Maintained by <a href="https://github.com/altruity">Dano Alexander</a>.</p>
+</blockquote>
+
+<h2>
+<a name="demo" class="anchor" href="#demo"><span class="octicon octicon-link"></span></a>Demo</h2>
+
+<p><a href="http://webcomponents.github.io/x-dribbble">Check it live!</a></p>
+
+<h2>
+<a name="install" class="anchor" href="#install"><span class="octicon octicon-link"></span></a>Install</h2>
+
+<p>Using <a href="http://bower.io">Bower</a>, run:</p>
+
+<div class="highlight highlight-bash"><pre><span class="nv">$ </span>bower install --save x-dribbble
+</pre></div>
+
+<h2>
+<a name="usage" class="anchor" href="#usage"><span class="octicon octicon-link"></span></a>Usage</h2>
+
+<ol>
+<li>
+<p>Install the component using <a href="http://bower.io/">Bower</a>:</p>
+
+<div class="highlight highlight-sh"><pre><span class="nv">$ </span>bower install x-dribbble --save
+</pre></div>
+</li>
+<li>
+<p>Import Web Components' polyfill:</p>
+
+<div class="highlight highlight-html"><pre><span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"bower_components/platform/platform.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+</pre></div>
+</li>
+<li>
+<p>Import Custom Element:</p>
+
+<div class="highlight highlight-html"><pre><span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"import"</span> <span class="na">href=</span><span class="s">"bower_components/x-dribbble/dist/x-dribbble.html"</span><span class="nt">&gt;</span>
+</pre></div>
+</li>
+<li>
+<p>Start using it!</p>
+
+<div class="highlight highlight-html"><pre><span class="nt">&lt;x-dribbble&gt;&lt;/x-dribbble&gt;</span>
+</pre></div>
+</li>
+</ol><h2>
+<a name="options" class="anchor" href="#options"><span class="octicon octicon-link"></span></a>Options</h2>
+
+<p>NOTE: Currently no API key/authentication required with Dribbble's API (<em>as of Apr 20, 2014</em>)</p>
+
+<table>
+<thead><tr>
+<th>Attribute</th>
+<th>Options</th>
+<th>Default</th>
+<th>Description</th>
+</tr></thead>
+<tbody>
+<tr>
+<td><code>list</code></td>
+<td><em>string</em></td>
+<td>``</td>
+<td>The category to query for (e.g 'popular')</td>
+</tr>
+<tr>
+<td><code>count</code></td>
+<td><em>integer</em></td>
+<td><code>10</code></td>
+<td>The max number of results to return</td>
+</tr>
+<tr>
+<td><code>shotsPerRow</code></td>
+<td><em>integer</em></td>
+<td><code>5</code></td>
+<td>The number of shots that will show up on a row</td>
+</tr>
+</tbody>
+</table><h2>
+<a name="contributing" class="anchor" href="#contributing"><span class="octicon octicon-link"></span></a>Contributing</h2>
+
+<ol>
+<li>Fork it!</li>
+<li>Create your feature branch: <code>git checkout -b my-new-feature</code>
+</li>
+<li>Commit your changes: <code>git commit -m 'Add some feature'</code>
+</li>
+<li>Push to the branch: <code>git push origin my-new-feature</code>
+</li>
+<li>Submit a pull request :D</li>
+</ol><h2>
+<a name="history" class="anchor" href="#history"><span class="octicon octicon-link"></span></a>History</h2>
+
+<p>For detailed changelog, check <a href="https://github.com/webcomponents/x-dribbble/releases">Releases</a>.</p>
+
+<h2>
+<a name="license" class="anchor" href="#license"><span class="octicon octicon-link"></span></a>License</h2>
+
+<p><a href="http://opensource.org/licenses/MIT">MIT License</a></p>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/altruity">altruity</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
