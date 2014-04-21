@@ -1,0 +1,29 @@
+{
+    "name": "x-dribbble",
+    "version": "0.0.1",
+    "homepage": "https://github.com/altruity/x-dribbble",
+    "authors": [
+        "Dano Alexander <altruity@gmail.com>"
+    ],
+    "description": "A Polymer element for querying the Dribbble API",
+    "license": "MIT",
+    "main": "x-dribbble.html",
+    "keywords": [
+        "web-component",
+        "web-components",
+        "polymer",
+        "dribbble"
+    ],
+    "ignore": [
+        "**/.*",
+        "node_modules",
+        "bower_components",
+        "test",
+        "tests"
+    ],
+    "dependencies": {
+        "platform": "Polymer/platform#~0.2.3",
+        "polymer": "Polymer/polymer#~0.2.3",
+        "polymer-jsonp": "Polymer/polymer-jsonp#~0.2.3"
+    }
+}

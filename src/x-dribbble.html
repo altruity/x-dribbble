@@ -1,0 +1,69 @@
+<link rel="import" href="../app/bower_components/polymer-jsonp/polymer-jsonp.html">
+
+<polymer-element name="x-dribbble" attributes="list count shotsPerRow">
+
+    <template>
+        <style>
+            :host {
+                * {
+                    padding: 0;
+                    margin: 0;
+                    float: left;
+                }
+            }
+
+            .dribbble {
+                float: left;
+                height: 100%;
+                width: 100%;
+                margin-bottom: 50px;
+            }
+
+            .item {
+                float: left;
+                margin: 0;
+                padding: 0;
+            }
+
+            .item img {
+                float: left;
+                width: 100%;
+                max-width: 100%;
+            }
+        </style>
+
+        <polymer-jsonp id="ajax" auto url="http://api.dribbble.com/shots/{{list}}?per_page={{count}}&callback=" response="{{shots}}"></polymer-jsonp>
+
+        <div class="dribbble">
+            <template id="shots" repeat="{{item in shots}}" index="i">
+                <div class="item" style="width: {{shotWidthPercent}}%">
+                    <img src="{{item.image_url}}">
+                </div>
+            </template>
+        </div>
+    </template>
+
+    <script>
+        Polymer('x-dribbble', {
+            count: 10,
+            shotsPerRow: 5,
+            shotWidthPercent: 20,
+            shots: [],
+            /**
+             * NOTE: Currently no API key/authentication required with Dribbble's API (as of Apr 20, 2014)
+             */
+            ready: function () {
+                this.shotWidthPercent = 100 / this.shotsPerRow;
+                this.$.shots.model = this.shots;
+                this.$.ajax.addEventListener('polymer-response',
+                    function (e) {
+                        this.shots = {shots: e.detail.response.shots};
+                        this.$.shots.model = {shots: e.detail.response.shots};
+                        this.fire('x-dribbble-load', {response: e.detail.response.shots});
+                    }.bind(this)
+                );
+            }
+        });
+    </script>
+
+</polymer-element>
