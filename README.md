@@ -7,7 +7,7 @@ A [Polymer](http://polymer-project.org) element for querying results from the [D
 
 ## Demo
 
-[Check it live!](http://webcomponents.github.io/x-dribbble)
+[Check it live!](http://altruity.github.io/x-dribbble/)
 
 
 ## Install
