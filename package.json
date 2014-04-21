@@ -1,0 +1,20 @@
+{
+    "name": "x-dribbble",
+    "version": "0.0.1",
+    "description": "A Polymer element for querying the Dribbble API",
+    "author": "Dano Alexander",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/altruity/x-dribbble"
+    },
+    "bugs": {
+        "url": "https://github.com/altruity/x-dribbble/issues"
+    },
+    "devDependencies": {
+        "grunt": "~0.4.1",
+        "grunt-cli": "~0.1.9",
+        "grunt-contrib-connect": "~0.5.0",
+        "grunt-text-replace": "~0.3.11"
+    }
+}

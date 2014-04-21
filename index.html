@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>&lt;x-dribbble&gt;</title>
+
+    <!-- Importing Web Component's Polyfill -->
+    <script src="app/bower_components/platform/platform.js"></script>
+
+    <!-- Importing Custom Elements -->
+    <link rel="import" href="src/x-dribbble.html">
+</head>
+<body>
+
+    <h1><a href="http://github.com/altruity/x-dribbble">&lt;x-dribbble&gt;</a></h1>
+    <h2>A Polymer element for querying the Dribbble API</h2>
+
+    <!-- Using Custom Elements -->
+    <h3>Usage</h3>
+    <pre>
+        &lt;x-dribbble list="popular" count="5"&gt;&lt;/x-dribbble&gt;
+    </pre>
+
+    <h4>Popular:</h4>
+    <x-dribbble list="popular"></x-dribbble>
+
+    <h4>Everyone:</h4>
+    <x-dribbble list="everyone" count="15"></x-dribbble>
+
+    <h4>Debuts:</h4>
+    <x-dribbble list="debuts" count="6" shotsPerRow="3"></x-dribbble>
+
+</body>
+</html>
