@@ -7,11 +7,6 @@ A [Polymer](http://polymer-project.org) element for querying results from the [D
 Inspired by <a href="https://github.com/addyosmani/x-instagram/" target="_blank">Addy Osmani's x-instagram</a> and <a href="https://github.com/tamaspiros/x-flickr/" target="_blank">Tamas Piros's x-flickr</a>
 
 
-## Demo
-
-[Check it live!](http://webcomponents.github.io/x-dribbble)
-
-
 ## Install
 
 Using [Bower](http://bower.io), run:
